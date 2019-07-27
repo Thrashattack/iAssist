@@ -14,7 +14,7 @@ class SolicitacaoPublica {
     private var titulo: String
     private var descricao: String
     private var historia: String
-    private var imagem: [String] = []
+    private var imagem: [String] = ["default", "default", "default", "default", "default"]
     private var urgencia: Int = 0
     private var upVote: Int = 0
     private var downVote: Int = 0

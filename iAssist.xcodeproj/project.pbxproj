@@ -16,6 +16,8 @@
 		3FA431BA22E8D8CC0067ED30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA431B822E8D8CC0067ED30 /* Main.storyboard */; };
 		3FA431BC22E8D8CC0067ED30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA431BB22E8D8CC0067ED30 /* Assets.xcassets */; };
 		3FA431BF22E8D8CC0067ED30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA431BD22E8D8CC0067ED30 /* LaunchScreen.storyboard */; };
+		CA696A0722ED0E5100E3E4AC /* ListaDeSolicitacoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA696A0622ED0E5100E3E4AC /* ListaDeSolicitacoesTableViewController.swift */; };
+		CA696A0922ED0EA300E3E4AC /* ListaDeSolicitacoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA696A0822ED0EA300E3E4AC /* ListaDeSolicitacoesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3FA431BB22E8D8CC0067ED30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA431BE22E8D8CC0067ED30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA431C022E8D8CC0067ED30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA696A0622ED0E5100E3E4AC /* ListaDeSolicitacoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDeSolicitacoesTableViewController.swift; sourceTree = "<group>"; };
+		CA696A0822ED0EA300E3E4AC /* ListaDeSolicitacoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDeSolicitacoesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 		3F19DEF522EA1E070021D887 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3F19DEFC22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift */,
-				3F19DEFE22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift */,
+				CA696A0522ED0DF200E3E4AC /* Solicitacao */,
+				CA696A0422ED0DD600E3E4AC /* Assistencia */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -90,6 +94,24 @@
 				3FA431C022E8D8CC0067ED30 /* Info.plist */,
 			);
 			path = iAssist;
+			sourceTree = "<group>";
+		};
+		CA696A0422ED0DD600E3E4AC /* Assistencia */ = {
+			isa = PBXGroup;
+			children = (
+				3F19DEFC22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift */,
+				3F19DEFE22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift */,
+			);
+			name = Assistencia;
+			sourceTree = "<group>";
+		};
+		CA696A0522ED0DF200E3E4AC /* Solicitacao */ = {
+			isa = PBXGroup;
+			children = (
+				CA696A0622ED0E5100E3E4AC /* ListaDeSolicitacoesTableViewController.swift */,
+				CA696A0822ED0EA300E3E4AC /* ListaDeSolicitacoesTableViewCell.swift */,
+			);
+			name = Solicitacao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +188,9 @@
 			files = (
 				3F19DEFF22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift in Sources */,
 				3F19DEF922EA1F2E0021D887 /* Donation.swift in Sources */,
+				CA696A0722ED0E5100E3E4AC /* ListaDeSolicitacoesTableViewController.swift in Sources */,
 				3FA431B522E8D8CC0067ED30 /* AppDelegate.swift in Sources */,
+				CA696A0922ED0EA300E3E4AC /* ListaDeSolicitacoesTableViewCell.swift in Sources */,
 				3F19DEFD22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift in Sources */,
 				3F19DEFB22EA22580021D887 /* SolicitacaoPublica.swift in Sources */,
 				3F19DEF722EA1E550021D887 /* Assistencia.swift in Sources */,
