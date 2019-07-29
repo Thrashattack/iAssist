@@ -86,14 +86,25 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        let assistencia = assistencias[(tableView.indexPathForSelectedRow?.row)!]
+        
+        if segue.identifier == "showAssistenciaDetailSegue" {
+            if let destinationView = segue.destination as? DetalheAssistenciaViewController {
+                destinationView.imagem = assistencia.getImagem(index: 0)
+                destinationView.titulo = assistencia.getTitulo()
+                destinationView.historia = assistencia.getHistoria()
+            }
+        }
+        
+        
+        
     }
-    */
+    
 
 }

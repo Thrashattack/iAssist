@@ -12,6 +12,7 @@
 		3F19DEFB22EA22580021D887 /* SolicitacaoPublica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19DEFA22EA22580021D887 /* SolicitacaoPublica.swift */; };
 		3F19DEFD22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19DEFC22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift */; };
 		3F19DEFF22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19DEFE22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift */; };
+		3F78F78A22EF8ACA0036FA75 /* DetalheAssistenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F78922EF8ACA0036FA75 /* DetalheAssistenciaViewController.swift */; };
 		3FA431B522E8D8CC0067ED30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA431B422E8D8CC0067ED30 /* AppDelegate.swift */; };
 		3FA431BA22E8D8CC0067ED30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA431B822E8D8CC0067ED30 /* Main.storyboard */; };
 		3FA431BC22E8D8CC0067ED30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA431BB22E8D8CC0067ED30 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		3F19DEFA22EA22580021D887 /* SolicitacaoPublica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitacaoPublica.swift; sourceTree = "<group>"; };
 		3F19DEFC22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDeAssistenciaTableViewController.swift; sourceTree = "<group>"; };
 		3F19DEFE22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDeAssistenciaTableViewCell.swift; sourceTree = "<group>"; };
+		3F78F78922EF8ACA0036FA75 /* DetalheAssistenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheAssistenciaViewController.swift; sourceTree = "<group>"; };
 		3FA431B122E8D8CC0067ED30 /* iAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA431B422E8D8CC0067ED30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA431B922E8D8CC0067ED30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				3F19DEFC22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift */,
 				3F19DEFE22EA34AA0021D887 /* ListaDeAssistenciaTableViewCell.swift */,
+				3F78F78922EF8ACA0036FA75 /* DetalheAssistenciaViewController.swift */,
 			);
 			name = Assistencia;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				3F19DEFD22EA2E9A0021D887 /* ListaDeAssistenciaTableViewController.swift in Sources */,
 				3F19DEFB22EA22580021D887 /* SolicitacaoPublica.swift in Sources */,
 				3F19DEF722EA1E550021D887 /* Assistencia.swift in Sources */,
+				3F78F78A22EF8ACA0036FA75 /* DetalheAssistenciaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
