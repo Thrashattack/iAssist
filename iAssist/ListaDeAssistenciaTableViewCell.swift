@@ -16,6 +16,8 @@ class ListaDeAssistenciaTableViewCell: UITableViewCell {
     @IBOutlet weak var tituloLabel: UILabel!
 
     @IBOutlet weak var labelDeTeste: UILabel!
+    
+    var upvotes = 0
   
     
     override func awakeFromNib() {

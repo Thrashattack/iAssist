@@ -97,6 +97,10 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.19682548415492956" colorSpace="calibratedRGB"/>
                                                                             <state key="normal" title="Up"/>
+                                                                            <connections>
+                                                                                <action selector="UpVoteButtonClick:" destination="fLo-wc-oP3" eventType="touchUpInside" id="FRx-cS-juN"/>
+                                                                                <action selector="upVoteClick:forEvent:" destination="oWC-G7-h2m" eventType="touchUpInside" id="7hW-G0-4qk"/>
+                                                                            </connections>
                                                                         </button>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU1-jm-0tX">
                                                                             <rect key="frame" x="45" y="0.0" width="39" height="30"/>
@@ -105,6 +109,9 @@
                                                                                 <color key="titleColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             </state>
+                                                                            <connections>
+                                                                                <action selector="DownVoteClick:forEvent:" destination="fLo-wc-oP3" eventType="touchUpInside" id="4iP-sT-egT"/>
+                                                                            </connections>
                                                                         </button>
                                                                     </subviews>
                                                                 </stackView>

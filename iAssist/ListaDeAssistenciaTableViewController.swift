@@ -10,13 +10,11 @@ import UIKit
 
 class ListaDeAssistenciaTableViewController: UITableViewController {
     
-    var assistencias = [Assistencia]()
-    var cont = ""
-    var aux = 0
-    @IBAction func ganbirraBotaoUpVote(_ sender: Any) {
-        
-        aux += 1
+    @IBAction func upVoteClick(_ sender: UIButton, forEvent event: UIEvent) {
+        self.calcUpVote(assistencia: assistencias[(tableView.indexPathForSelectedRow?.row)!])
     }
+    var assistencias = [Assistencia]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +37,10 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return assistencias.count
     }
-
+    
+    func calcUpVote(assistencia: Assistencia) {
+        assistencia.setUpVote()
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listaDeAssistenciaCell", for: indexPath)
@@ -49,8 +50,7 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
         if let destinationCell = cell as? ListaDeAssistenciaTableViewCell {
             destinationCell.tituloLabel.text = assistencia.getTitulo()
             destinationCell.imagemImageView.image = UIImage(named: assistencia.getImagem(index: 0))
-            destinationCell.labelDeTeste.text = String(aux)
-            aux = assistencia.getUpVote()
+            destinationCell.upvotes = assistencia.getUpVote()
     
             
         }
@@ -109,7 +109,7 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
                 destinationView.imagem = assistencia.getImagem(index: 0)
                 destinationView.titulo = assistencia.getTitulo()
                 destinationView.historia = assistencia.getHistoria()
-                destinationView.contadora = String(aux)
+                destinationView.contadora = String(assistencia.getUpVote())
             }
         }
         

@@ -21,11 +21,10 @@ class DetalheAssistenciaViewController: UIViewController {
     var contadora = "0"
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         imagemImageView.image = UIImage(named: imagem)
         tituloLabel.text = titulo
         historiaTextView.text = historia
-        contadoraDeLikesLabel.text = contadora
+        //contadoraDeLikesLabel.text = contadora
     }
 
     override func didReceiveMemoryWarning() {
