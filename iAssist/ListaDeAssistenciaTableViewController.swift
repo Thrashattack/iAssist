@@ -11,7 +11,13 @@ import UIKit
 class ListaDeAssistenciaTableViewController: UITableViewController {
     
     var assistencias = [Assistencia]()
-
+    var cont = ""
+    var aux = 0
+    @IBAction func ganbirraBotaoUpVote(_ sender: Any) {
+        
+        aux += 1
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         assistencias = AssistenciaMock.mockAssistencias()
@@ -43,6 +49,10 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
         if let destinationCell = cell as? ListaDeAssistenciaTableViewCell {
             destinationCell.tituloLabel.text = assistencia.getTitulo()
             destinationCell.imagemImageView.image = UIImage(named: assistencia.getImagem(index: 0))
+            destinationCell.labelDeTeste.text = String(aux)
+            aux = assistencia.getUpVote()
+    
+            
         }
         
         
@@ -50,7 +60,7 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
         return cell
     }
     
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -99,6 +109,7 @@ class ListaDeAssistenciaTableViewController: UITableViewController {
                 destinationView.imagem = assistencia.getImagem(index: 0)
                 destinationView.titulo = assistencia.getTitulo()
                 destinationView.historia = assistencia.getHistoria()
+                destinationView.contadora = String(aux)
             }
         }
         

@@ -9,10 +9,14 @@
 import UIKit
 
 class ListaDeAssistenciaTableViewCell: UITableViewCell {
+
     
     @IBOutlet weak var imagemImageView: UIImageView!
     
     @IBOutlet weak var tituloLabel: UILabel!
+
+    @IBOutlet weak var labelDeTeste: UILabel!
+  
     
     override func awakeFromNib() {
         super.awakeFromNib()
